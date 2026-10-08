@@ -1,0 +1,40 @@
+First time
+
+Window 1: backend
+
+powershell
+cd C:\Users\vikas\Desktop\connect\backend
+mvn spring-boot:run
+
+The first run downloads dependencies, which takes a few minutes. It's ready when you see Started PulseApplication. Leave this window open.
+
+Window 2: frontend
+
+powershell
+cd C:\Users\vikas\Desktop\connect\frontend
+npm install
+npm run dev
+
+Leave this one open too.
+
+Browser: open http://localhost:5173
+
+Every time after that
+
+Window 1: backend
+
+powershell
+cd C:\Users\vikas\Desktop\connect\backend
+mvn spring-boot:run
+
+Window 2: frontend (no npm install needed now)
+
+powershell
+cd C:\Users\vikas\Desktop\connect\frontend
+npm run dev
+
+Browser: open http://localhost:5173
+
+To stop
+
+Press Ctrl + C in each window.
